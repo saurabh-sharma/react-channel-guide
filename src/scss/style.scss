@@ -1,0 +1,73 @@
+@import 'reset';
+
+.channelWrapper{
+	display: block;
+	float: left;
+	width: 200px;
+	height:415px;
+	background: #ccc;
+	
+}
+.channels{
+		overflow-y: auto;
+		height: 365px;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar { display: none; }
+		
+		.channel{
+			width: 100%;
+			display: block;
+			padding: 15px;
+			height: 50px;
+			box-sizing: border-box;
+			text-align: center;
+		} 
+	}
+.showsWrapper{
+	display: block;
+	float: left;
+	width: calc(100% - 200px);
+	height: 415px;
+	.row{
+		display: inline-flex;
+		width: 100%;
+		overflow: overlay;
+		&::-webkit-scrollbar { display: none; }
+	}
+	.guides{
+		height: calc(100% - 50px);
+		overflow: auto;
+		.show_row{
+			display: inline-flex;
+			overflow: auto;
+			.show{
+				border: 1px solid;
+				width: 200px;
+				float: left;
+				height: 50px;
+				background: #666;
+				padding: 15px;
+				box-sizing: border-box;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+.header {
+    display: inline-flex;
+    background: #ccc;
+	height: 50px;
+	
+
+	.time,.weekdays{
+		width: 200px;
+		padding: 15px;
+		text-align: center;
+		box-sizing: border-box;
+		&.active{
+			
+		}
+	}
+}
